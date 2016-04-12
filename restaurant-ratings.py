@@ -49,6 +49,7 @@ def add_restaurant(restaurant_scores):
     new_restaurant = raw_input("What is the name of the restaurant you'd like to add? - ")
     new_score = raw_input("What is the score for %s? - " % (new_restaurant))
     restaurant_scores[new_restaurant] = new_score
+    print "Great, the new score for %s is %s" % (new_restaurant, new_score)
     return restaurant_scores
 
 
@@ -79,7 +80,7 @@ while True:
     print "3 - Print existing restaurants and ratings."
     print "q - Exit program."
     print "\n"
-    choice = raw_input("What would you like to do? Choose 1, 2, 3, or 4. - ")
+    choice = raw_input("Choose 1, 2, 3, or 4. - ")
 
     if choice == "1":
         print "\n"
